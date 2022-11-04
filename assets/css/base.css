@@ -1,0 +1,40 @@
+:root {
+    --while-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /*Mặc định là 16px
+    HACK: 1rem -> 10px*/
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    /*1 rem = 16px*/
+    font-size: 1.6rem;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%; /*Nếu nằm trong điện thoại hay màn hình nhỏ hơn 1200px thì nó có tác dụng là 100%*/
+    margin: 0 auto; /*Giúp khối này nằm trong một khối khác căn giữa nó*/
+}
+
+/*Trong trường hợp ko muốn dùng grid là 1200 thì dùng width 100%*/
+.grid__full-width {
+    width: 100%;
+}
+
+/*Tổng độ dài thằng con có độ dài nhỏ hơn thì tự động xuống dòng*/
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
