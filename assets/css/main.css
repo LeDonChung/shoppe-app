@@ -77,3 +77,64 @@
 	display: inline-flex;
 	align-items: center;
 }
+
+-- QR CODE
+.header__navbar-item {
+    position: relative;
+
+}
+
+/*Khi nào hover vào class này thì show lại qr*/
+.header__navbar-item--has-qr:hover .header__qr{
+    display: block;
+}
+
+.header__qr{
+    width: 170px;
+    position: absolute;
+    left: 0;
+    top: 175%;
+    background: var(--while-color);
+    border-radius: 2px;
+    padding: 5px;
+    display: none;
+    animation: fadeIn ease 0.3s;
+
+}
+.header__qr::before{
+    position: absolute;
+    left: 0;
+    top: -9%;
+    width: 100%;
+    height: 20px;
+    content: "";
+    background: transparent;
+    display: block;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.header__qr-apps {
+    display: flex;
+}
+
+.header__qr-link:nth-child(1){
+    margin-left: 11px;
+}
+
+.header__qr-link:nth-child(2){
+    margin-right: 11px;
+}
+.header__qr-img{
+    width: 100%;
+
+}
+
+.header__qr-download-img{
+    height: 16px;
+}
