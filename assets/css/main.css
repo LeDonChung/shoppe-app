@@ -138,3 +138,123 @@
 .header__qr-download-img{
     height: 16px;
 }
+
+.header_notify{
+    position: absolute;
+    top: 175%;
+    right: 0%;
+    width: 400px;
+    border-radius: 2px;
+    border: rgba(0, 0, 0, 0.1) solid 1px;
+    background-color: var(--while-color);
+    cursor: default;
+    transform-origin: (100% - 24px) top;
+    animation: growthNotify ease-in 0.2s;
+    display: none;
+    will-change: opacity, transform;
+}
+
+@keyframes growthNotify {
+    from{
+        transform: scale(0);
+        opacity: 0; 
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+.header__navbar-item--has-notify:hover .header_notify{
+    display: block;
+}
+.header_notify::before{
+    position: absolute;
+    right: 0;
+    top: -7%;
+    width: 77px;
+    height: 25px;
+    content: "";
+    background: transparent;
+    display: block;
+}
+.header_notify::after{
+    position: absolute;
+    right: 0%;
+    top: -12%;
+    border-width: 24px 36px;
+    border-style: solid;
+    border-color: transparent transparent var(--while-color) transparent;
+    content: "";
+
+}
+.header__notify-header{
+}
+.header__notify-header h3{
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;
+}
+
+.header__notify-list{
+    padding: 0;
+}
+
+.header__notify-item:hover{
+}
+
+.header_notify-link{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px;
+}
+.header_notify-link:hover{
+    background-color: rgb(240, 236, 236);
+}
+
+.header__notify-img{
+    width: 50px;
+    height: 50px;
+}
+
+.header__notify-info{
+    padding-left: 12px;
+}
+
+.header__notify-name{
+    display: block;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.header__notify-descriotion{
+    display: block;
+    font-size: 1.1rem;
+    color: #756F6E;
+    line-height: 1.5rem;
+    margin-top: 4px;
+    
+}
+.header__notify-item--viewed{
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
+.header__notify-footer{
+    display: flex;
+
+}
+
+.header__notify-footer-btn{
+    padding: 8px 0;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
