@@ -3,6 +3,10 @@
     --black-color: #000;
     --text-color: #333;
     --text-priamry:var(--black-color);
+
+    --header-height: 120px;
+    --navbar-height: 21px;
+    --with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -39,3 +43,5 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
+
+
