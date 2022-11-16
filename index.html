@@ -121,11 +121,85 @@
                         </div>
 
                         <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm">
+                                <div class="header__search-history">
+                                    <h2 class="header__search-history-heading">Lịch sử tìm kiếm</h2>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="" class="">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="" class="">Kem dưỡng da</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-option">
+                                <span class="header__search-lable">Trong shop</span>
+                                <i class="header__search-icon fa-solid fa-angle-down"></i>
 
+                                <ul class="header__search-select">
+                                    <li class="header__search-select-item header__search-select--check">
+                                        <span>Trong shop</span>
+                                        <i class=" fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-select-item">
+                                        <span>Ngoài shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                                
+                                
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>                           
+                            </button>
                         </div>
 
                         <div class="header__cart">
-                            <i class="header__cart-icon fa-solid fa-cart-plus"></i>
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-plus"></i>
+                                <span class="header__cart-notice">3</span>
+                                <!--No cart: header__cart-list--no-cart-->
+                                <div class="header__cart-list header__cart-list--has-cart">
+                                    <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+
+                                    <h3 class="header__cart-heading">Sản phẩm đã bán</h3>
+
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/product.jpg" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-item-info">
+                                                <h3 class="header__cart-item-name">Áo polo unisex BLEGCN</h1>
+                                                <h4 class="header__cart-item-fee">119.000đ</h4>
+                                            </div>
+                                        </li>   
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/product.jpg" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-item-info">
+                                                <h1 class="header__cart-item-name">Áo polo unisex BLEGCN</h1>
+                                                <h4 class="header__cart-item-fee">119.000đ</h4>
+                                            </div>
+                                        </li> 
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/product.jpg" alt="" class="header__cart-item-img">
+                                            <div class="header__cart-item-info">
+                                                <h1 class="header__cart-item-name">Áo polo unisex BLEGCN</h1>
+                                                <h4 class="header__cart-item-fee">119.000đ</h4>
+                                            </div>
+                                        </li> 
+                                    </ul>
+
+                                    <div class="header__cart-list-has-footer">
+                                        <div class="header__cart-list-footer">
+                                            <h4 class="header__cart-list-total">3 Thêm Vào Giỏ Hàng</h4>
+                                            <button class="header__cart-list-btn">Xem Giỏ Hàng</button>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -139,7 +213,5 @@
             </footer>
             
         </div>
-
-        
     </body>
 </html>
