@@ -3,7 +3,7 @@
     --black-color: #000;
     --text-color: #333;
     --text-priamry:var(--black-color);
-
+    --star-gold-color: rgb(245, 249, 6);
     --header-height: 120px;
     --navbar-height: 21px;
     --with-search-height: calc(var(--header-height) - var(--navbar-height));
@@ -32,16 +32,20 @@ p {
     width: 1200px;
     max-width: 100%; /*Nếu nằm trong điện thoại hay màn hình nhỏ hơn 1200px thì nó có tác dụng là 100%*/
     margin: 0 auto; /*Giúp khối này nằm trong một khối khác căn giữa nó*/
-    
 }
 
 .grid__column-2 {
-    padding: 0 12px;
     width: 16.6667%;
+    padding: 0 5px;
 }
 
+
+.grid__column-2-4 {
+    padding: 0 5px;
+    width: 20%;
+}
 .grid__column-10 {
-    padding: 0 12px;
+    padding: 0 5px;
     width: 83.3333%;
 }
 /*Trong trường hợp ko muốn dùng grid là 1200 thì dùng width 100%*/
@@ -53,8 +57,8 @@ p {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 
@@ -62,3 +66,59 @@ p {
 
 }
 
+.btn {
+    min-width: 124px;
+    height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    padding: 0 12px;
+    cursor: pointer;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6rem;
+    background-color: var(--while-color);
+}
+
+.btn--primary {
+    background-color: #fb6445;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-item {
+    list-style: none;
+    margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link{
+    color: var(--while-color);
+    background-color: #fb6445;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
+}
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+}
+
+.pagination-item__icon {
+
+}
